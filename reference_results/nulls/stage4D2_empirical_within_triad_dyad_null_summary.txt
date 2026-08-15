@@ -1,0 +1,55 @@
+Brain Topography Project — Stage 4D2 Empirical Within-Triad Dyad Null
+==================================================================================
+Run time: 2026-08-14T23:54:17-04:00
+Fixed label-supported candidates: 7
+Dyad-null realizations: 1000
+Candidate-family alpha: 0.050
+
+CANDIDATES
+  unit 3801: decision beta pair13 Fp2-C3
+    ΔPLV=0.066665; label=0.00959808; time=0.00099900; cross-group partner=0.00099900
+    within-triad dyad p_maxT=0.03696304; pass=True; all-four-layers-pass=True
+  unit 4166: decision beta pair23 Fp2-C4
+    ΔPLV=0.074925; label=0.01039792; time=0.00099900; cross-group partner=0.00099900
+    within-triad dyad p_maxT=0.73026973; pass=False; all-four-layers-pass=False
+  unit 4877: decision gamma pair13 Fp1-O1
+    ΔPLV=0.079501; label=0.03259348; time=0.00099900; cross-group partner=0.00099900
+    within-triad dyad p_maxT=0.74225774; pass=False; all-four-layers-pass=False
+  unit 4900: decision gamma pair13 Fp2-T6
+    ΔPLV=0.068156; label=0.01819636; time=0.00099900; cross-group partner=0.00099900
+    within-triad dyad p_maxT=0.88611389; pass=False; all-four-layers-pass=False
+  unit 4994: decision gamma pair13 F7-F8
+    ΔPLV=0.078445; label=0.01719656; time=0.00099900; cross-group partner=0.00099900
+    within-triad dyad p_maxT=0.00199800; pass=True; all-four-layers-pass=True
+  unit 5317: decision gamma pair23 O1-F8
+    ΔPLV=0.062082; label=0.02639472; time=0.00099900; cross-group partner=0.00099900
+    within-triad dyad p_maxT=0.99300699; pass=False; all-four-layers-pass=False
+  unit 8156: feedback beta pair13 T3-C4
+    ΔPLV=0.088978; label=0.01799640; time=0.00099900; cross-group partner=0.00099900
+    within-triad dyad p_maxT=0.01198801; pass=True; all-four-layers-pass=True
+
+COUNTS
+  Within-triad dyad-null passes: 3/7
+  All four null layers pass: 3/7
+
+CHECKS
+  candidate_count_7: PASS
+  null_shape_1000x7: PASS
+  null_all_finite: PASS
+  null_sd_positive: PASS
+  p_valid: PASS
+
+RESULT
+  PASS
+
+INTERPRETATION
+  Stage 3D still defines the fixed label-supported candidate family.
+  The within-triad dyad null is an additional common-drive robustness
+  diagnostic justified by the frozen Stage 4B/4C simulation evidence.
+  Passing all layers does not establish causal neural coupling.
+
+FILE PROVENANCE
+  CSV: results/nulls/stage4D2_empirical_within_triad_dyad_null.csv
+  CSV SHA256: cde80283b2229bf2e8f95f3585d501bc8376379d37407f42c2996d642292c599
+
+Summary: results/nulls/stage4D2_empirical_within_triad_dyad_null_summary.txt

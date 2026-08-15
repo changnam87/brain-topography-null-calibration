@@ -1,0 +1,74 @@
+Brain Topography Project — Stage 3D Production Label-Null Inference
+============================================================================
+Run time: 2026-08-14T22:48:35-04:00
+Elapsed seconds: 1.22
+Permutations: 5000
+Primary statistic: block_information_weighted
+Multiple-comparison method: studentized_global_maxT_FWER
+
+OUTPUT INTEGRITY
+  Units: 9747
+  Minimum attainable empirical p: 0.00019996
+  Minimum unadjusted p: 0.00019996
+  Minimum maxT-FWER p: 0.00959808
+  maxT-FWER candidates at alpha=0.050: 7
+
+MAXT-FWER P-VALUE QUANTILES
+  p  0: 0.00959808
+  p  1: 0.98161568
+  p  5: 1.00000000
+  p 25: 1.00000000
+  p 50: 1.00000000
+  p 75: 1.00000000
+  p 95: 1.00000000
+  p 99: 1.00000000
+  p100: 1.00000000
+
+ABS(OBSERVED STUDENTIZED STATISTIC) QUANTILES
+  p  0: 0.000279
+  p  1: 0.022343
+  p  5: 0.102822
+  p 25: 0.486620
+  p 50: 1.029047
+  p 75: 1.728987
+  p 95: 2.779505
+  p 99: 3.476657
+  p100: 4.701397
+
+NULL MAX-|STUDENTIZED| QUANTILES
+  p  90: 4.305635
+  p  95: 4.429707
+  p  99: 4.693728
+  p99.5: 4.822911
+  p 100: 5.406405
+
+CHECKS
+  nperm_5000: PASS
+  units_9747: PASS
+  observed_finite: PASS
+  studentized_finite: PASS
+  null_sd_positive_finite: PASS
+  p_unadjusted_valid: PASS
+  p_maxT_valid: PASS
+  maxT_ge_unadjusted: PASS
+  p_unadjusted_grid: PASS
+  p_maxT_grid: PASS
+  candidate_matches_alpha: PASS
+  primary_statistic_exact: PASS
+  multiple_comparison_exact: PASS
+
+FILE PROVENANCE
+  NPZ: results/nulls/label_null_plv.npz
+  NPZ SHA256: 1fdf327f107252a46c1059cd3a914caebba1b062ac48471b71aeaeb1cde74ac5
+  CSV: results/nulls/label_null_plv_units.csv
+  CSV SHA256: 5e04fab3ff6f7ef19334592b0b802a111e4d3d760caf1eac81242d9ed91f2dd0
+
+RESULT
+  PASS
+
+NEXT
+  If PASS, inspect the production candidate set and secondary statistics.
+  Do NOT run temporal-shift or partner-shuffle candidate nulls until the
+  production candidate table itself has been audited.
+
+Summary: results/nulls/stage3D_production_label_null_summary.txt

@@ -1,0 +1,153 @@
+Brain Topography Project — Stage 4B Production Ground-Truth Simulation
+==================================================================================
+Total runs: 1800
+Elapsed minutes this invocation: 3.66
+Parallel workers: 4
+Label permutations/run: 500
+Secondary null realizations/run: 250
+
+NULL / CONFOUND CALIBRATION CELLS
+  N_IND_1 independent_null shared=0.00 noise=0.060 n=100:
+    naive FWER=1.000 [0.963,1.000]
+    label FWER=0.070 [0.034,0.137]
+    full FWER=0.030 [0.010,0.085]
+  N_IND_2 independent_null shared=0.00 noise=0.100 n=100:
+    naive FWER=1.000 [0.963,1.000]
+    label FWER=0.030 [0.010,0.085]
+    full FWER=0.020 [0.006,0.070]
+  N_IND_3 independent_null shared=0.00 noise=0.140 n=100:
+    naive FWER=1.000 [0.963,1.000]
+    label FWER=0.060 [0.028,0.125]
+    full FWER=0.030 [0.010,0.085]
+  N_GLOB_1 global_shared_event shared=0.35 noise=0.100 n=100:
+    naive FWER=1.000 [0.963,1.000]
+    label FWER=1.000 [0.963,1.000]
+    full FWER=0.150 [0.093,0.233]
+  N_GLOB_2 global_shared_event shared=0.60 noise=0.100 n=100:
+    naive FWER=1.000 [0.963,1.000]
+    label FWER=1.000 [0.963,1.000]
+    full FWER=0.090 [0.048,0.162]
+  N_GLOB_3 global_shared_event shared=0.85 noise=0.100 n=100:
+    naive FWER=1.000 [0.963,1.000]
+    label FWER=1.000 [0.963,1.000]
+    full FWER=0.020 [0.006,0.070]
+  N_GROUP_1 group_shared_event shared=0.35 noise=0.100 n=100:
+    naive FWER=1.000 [0.963,1.000]
+    label FWER=1.000 [0.963,1.000]
+    full FWER=0.630 [0.532,0.718]
+  N_GROUP_2 group_shared_event shared=0.60 noise=0.100 n=100:
+    naive FWER=1.000 [0.963,1.000]
+    label FWER=1.000 [0.963,1.000]
+    full FWER=1.000 [0.963,1.000]
+  N_GROUP_3 group_shared_event shared=0.85 noise=0.100 n=100:
+    naive FWER=1.000 [0.963,1.000]
+    label FWER=1.000 [0.963,1.000]
+    full FWER=1.000 [0.963,1.000]
+
+KNOWN-EDGE RECOVERY CELLS
+  R_TRUE_1_1 sparse_true coupling=0.35 shared=0.00 noise=0.060 n=50:
+    full sensitivity=0.020 [0.000,0.053]
+    full precision=0.119 [0.000,0.286]
+    full exact-recovery=0.000 [0.000,0.071]
+    raw AUPRC=0.323; raw top-K recall=0.240
+  R_TRUE_1_2 sparse_true coupling=0.35 shared=0.00 noise=0.100 n=50:
+    full sensitivity=0.027 [0.007,0.053]
+    full precision=0.389 [0.111,0.667]
+    full exact-recovery=0.000 [0.000,0.071]
+    raw AUPRC=0.219; raw top-K recall=0.147
+  R_TRUE_1_3 sparse_true coupling=0.35 shared=0.00 noise=0.140 n=50:
+    full sensitivity=0.007 [0.000,0.020]
+    full precision=0.200 [0.000,0.600]
+    full exact-recovery=0.000 [0.000,0.071]
+    raw AUPRC=0.208; raw top-K recall=0.140
+  R_TRUE_2_1 sparse_true coupling=0.60 shared=0.00 noise=0.060 n=50:
+    full sensitivity=0.280 [0.213,0.353]
+    full precision=0.262 [0.189,0.333]
+    full exact-recovery=0.000 [0.000,0.071]
+    raw AUPRC=0.410; raw top-K recall=0.253
+  R_TRUE_2_2 sparse_true coupling=0.60 shared=0.00 noise=0.100 n=50:
+    full sensitivity=0.133 [0.080,0.187]
+    full precision=0.235 [0.145,0.329]
+    full exact-recovery=0.000 [0.000,0.071]
+    raw AUPRC=0.458; raw top-K recall=0.327
+  R_TRUE_2_3 sparse_true coupling=0.60 shared=0.00 noise=0.140 n=50:
+    full sensitivity=0.087 [0.053,0.127]
+    full precision=0.379 [0.224,0.552]
+    full exact-recovery=0.000 [0.000,0.071]
+    raw AUPRC=0.414; raw top-K recall=0.267
+  R_TRUE_3_1 sparse_true coupling=0.85 shared=0.00 noise=0.060 n=50:
+    full sensitivity=0.507 [0.433,0.580]
+    full precision=0.312 [0.268,0.362]
+    full exact-recovery=0.000 [0.000,0.071]
+    raw AUPRC=0.476; raw top-K recall=0.353
+  R_TRUE_3_2 sparse_true coupling=0.85 shared=0.00 noise=0.100 n=50:
+    full sensitivity=0.233 [0.160,0.307]
+    full precision=0.255 [0.179,0.340]
+    full exact-recovery=0.000 [0.000,0.071]
+    raw AUPRC=0.426; raw top-K recall=0.293
+  R_TRUE_3_3 sparse_true coupling=0.85 shared=0.00 noise=0.140 n=50:
+    full sensitivity=0.153 [0.100,0.207]
+    full precision=0.482 [0.333,0.630]
+    full exact-recovery=0.000 [0.000,0.071]
+    raw AUPRC=0.429; raw top-K recall=0.287
+  R_MIX_1_1 sparse_true_plus_group_shared coupling=0.35 shared=0.60 noise=0.060 n=50:
+    full sensitivity=0.207 [0.140,0.273]
+    full precision=0.031 [0.021,0.041]
+    full exact-recovery=0.000 [0.000,0.071]
+    raw AUPRC=0.058; raw top-K recall=0.033
+  R_MIX_1_2 sparse_true_plus_group_shared coupling=0.35 shared=0.60 noise=0.100 n=50:
+    full sensitivity=0.087 [0.047,0.133]
+    full precision=0.027 [0.014,0.041]
+    full exact-recovery=0.000 [0.000,0.071]
+    raw AUPRC=0.060; raw top-K recall=0.027
+  R_MIX_1_3 sparse_true_plus_group_shared coupling=0.35 shared=0.60 noise=0.140 n=50:
+    full sensitivity=0.027 [0.007,0.053]
+    full precision=0.021 [0.002,0.046]
+    full exact-recovery=0.000 [0.000,0.071]
+    raw AUPRC=0.036; raw top-K recall=0.000
+  R_MIX_2_1 sparse_true_plus_group_shared coupling=0.60 shared=0.60 noise=0.060 n=50:
+    full sensitivity=0.333 [0.267,0.407]
+    full precision=0.041 [0.032,0.049]
+    full exact-recovery=0.000 [0.000,0.071]
+    raw AUPRC=0.436; raw top-K recall=0.300
+  R_MIX_2_2 sparse_true_plus_group_shared coupling=0.60 shared=0.60 noise=0.100 n=50:
+    full sensitivity=0.160 [0.100,0.220]
+    full precision=0.059 [0.037,0.083]
+    full exact-recovery=0.000 [0.000,0.071]
+    raw AUPRC=0.464; raw top-K recall=0.327
+  R_MIX_2_3 sparse_true_plus_group_shared coupling=0.60 shared=0.60 noise=0.140 n=50:
+    full sensitivity=0.060 [0.027,0.093]
+    full precision=0.049 [0.020,0.086]
+    full exact-recovery=0.000 [0.000,0.071]
+    raw AUPRC=0.518; raw top-K recall=0.413
+  R_MIX_3_1 sparse_true_plus_group_shared coupling=0.85 shared=0.60 noise=0.060 n=50:
+    full sensitivity=0.333 [0.273,0.400]
+    full precision=0.037 [0.030,0.044]
+    full exact-recovery=0.000 [0.000,0.071]
+    raw AUPRC=0.427; raw top-K recall=0.253
+  R_MIX_3_2 sparse_true_plus_group_shared coupling=0.85 shared=0.60 noise=0.100 n=50:
+    full sensitivity=0.120 [0.067,0.173]
+    full precision=0.037 [0.022,0.054]
+    full exact-recovery=0.000 [0.000,0.071]
+    raw AUPRC=0.461; raw top-K recall=0.280
+  R_MIX_3_3 sparse_true_plus_group_shared coupling=0.85 shared=0.60 noise=0.140 n=50:
+    full sensitivity=0.047 [0.020,0.080]
+    full precision=0.025 [0.008,0.047]
+    full exact-recovery=0.000 [0.000,0.071]
+    raw AUPRC=0.483; raw top-K recall=0.307
+
+INTERPRETATION FRAME
+  independent_null estimates ordinary false-positive control.
+  global_shared_event tests whether the full framework rejects a globally
+  shared event-locked drive that can inflate raw synchrony.
+  group_shared_event is an explicit limitation stress test: false positives
+  here quantify a confound that partner/time nulls may not distinguish from
+  interaction-specific coupling.
+  sparse_true cells quantify sensitivity/recovery with known edges.
+  sparse_true_plus_group_shared quantifies recovery under the hard confound.
+
+OUTPUTS
+  Raw runs: results/simulation/stage4B_production_runs.csv
+  Cell summary: results/simulation/stage4B_production_cell_summary.csv
+  Scenario summary: results/simulation/stage4B_production_scenario_summary.csv
+  Summary: results/simulation/stage4B_production_summary.txt

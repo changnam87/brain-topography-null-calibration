@@ -1,0 +1,73 @@
+Brain Topography Project — Stage 3G Production Candidate Nulls
+==========================================================================
+Run time: 2026-08-14T22:53:37-04:00
+Elapsed seconds: 10.09
+Fixed production candidate family: 7
+Temporal-shift realizations: 1000
+Partner-shuffle realizations: 1000
+Candidate-family alpha: 0.050
+
+SECONDARY NULL RESULTS
+  Temporal-shift maxT passes: 7/7
+  Partner-shuffle maxT passes: 7/7
+  BOTH secondary nulls pass: 7/7
+
+CANDIDATES
+  unit 3801: decision beta pair13 Fp2-C3
+    primary ΔPLV=0.066665; label p_maxT=0.00959808
+    time p_maxT=0.00099900; partner p_maxT=0.00099900; both-pass=True
+  unit 4166: decision beta pair23 Fp2-C4
+    primary ΔPLV=0.074925; label p_maxT=0.01039792
+    time p_maxT=0.00099900; partner p_maxT=0.00099900; both-pass=True
+  unit 4877: decision gamma pair13 Fp1-O1
+    primary ΔPLV=0.079501; label p_maxT=0.03259348
+    time p_maxT=0.00099900; partner p_maxT=0.00099900; both-pass=True
+  unit 4900: decision gamma pair13 Fp2-T6
+    primary ΔPLV=0.068156; label p_maxT=0.01819636
+    time p_maxT=0.00099900; partner p_maxT=0.00099900; both-pass=True
+  unit 4994: decision gamma pair13 F7-F8
+    primary ΔPLV=0.078445; label p_maxT=0.01719656
+    time p_maxT=0.00099900; partner p_maxT=0.00099900; both-pass=True
+  unit 5317: decision gamma pair23 O1-F8
+    primary ΔPLV=0.062082; label p_maxT=0.02639472
+    time p_maxT=0.00099900; partner p_maxT=0.00099900; both-pass=True
+  unit 8156: feedback beta pair13 T3-C4
+    primary ΔPLV=0.088978; label p_maxT=0.01799640
+    time p_maxT=0.00099900; partner p_maxT=0.00099900; both-pass=True
+
+CHECKS
+  fixed_candidate_count_preserved: PASS
+  fixed_candidate_ids_exact_order: PASS
+  time_production_count_1000: PASS
+  partner_production_count_1000: PASS
+  time_p_finite: PASS
+  partner_p_finite: PASS
+  time_p_bounds: PASS
+  partner_p_bounds: PASS
+  time_p_empirical_grid: PASS
+  partner_p_empirical_grid: PASS
+  saved_time_counts_exact: PASS
+  saved_partner_counts_exact: PASS
+  secondary_pass_logic_exact: PASS
+  candidate_metadata_preserved: PASS
+
+FILE PROVENANCE
+  CSV: results/nulls/candidate_nulls_plv.csv
+  CSV SHA256: 2b9dcc8e650323bcce5a55cffd50201fbea0d40459e2155f263ac33330dd0356
+
+RESULT
+  PASS
+
+INTERPRETATION RULE
+  The fixed Stage 3D maxT result defines the label-supported candidate set.
+  Stage 3G evaluates whether each fixed candidate also survives temporal
+  misalignment and partner-identity alternatives. A candidate that fails
+  either secondary null should not be described as robustly interaction-
+  specific. A candidate that passes both remains a null-calibrated candidate,
+  not proof of causal inter-brain coupling.
+
+NEXT
+  If PASS, freeze the final candidate-evidence classes, then proceed to
+  ground-truth simulation before any manuscript drafting.
+
+Summary: results/nulls/stage3G_production_candidate_null_summary.txt

@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite this repository and the associated manuscript."
+title: "Brain Topography Null-Calibrated Hyperscanning Analysis"
+type: software
+authors:
+  - family-names: "Nam"
+    given-names: "Chang S."
+    alias: "CS Nam"
+repository-code: "https://github.com/changnam87/brain-topography-null-calibration"
+url: "https://github.com/changnam87/brain-topography-null-calibration"
+license: MIT
+version: "0.1.0"
+date-released: "2026-08-15"
+keywords:
+  - EEG hyperscanning
+  - inter-brain synchrony
+  - phase-locking value
+  - null models
+  - triadic cooperation
+  - maxT
+  - imaginary coherency
+preferred-citation:
+  type: article
+  title: "Simulation-Informed Progressive Null Calibration of Inter-Brain PLV Topographies in Triadic Cooperation"
+  authors:
+    - family-names: "Nam"
+      given-names: "Chang S."
+  notes: "Manuscript submitted to Brain Topography; complete author list and publication metadata should be updated after acceptance."

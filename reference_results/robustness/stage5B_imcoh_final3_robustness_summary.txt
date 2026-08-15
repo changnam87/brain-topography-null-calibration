@@ -1,0 +1,45 @@
+Brain Topography Project — Stage 5B Final-3 Imaginary-Coherency Robustness
+======================================================================================
+Run time: 2026-08-15T00:00:44-04:00
+Fixed PLV candidates: 3
+Realizations per iCOH null family: 1000
+
+CANDIDATES
+  unit 3801: decision beta pair13 Fp2-C3
+    PLV Δ=0.066665; iCOH Δ=0.014314; direction agreement=True
+    iCOH maxT p: label=0.38161838; time=0.54145854; partner=0.27872128; within-triad dyad=0.51848152
+    iCOH label-pass=False; iCOH all-four-null-pass=False
+  unit 4994: decision gamma pair13 F7-F8
+    PLV Δ=0.078445; iCOH Δ=0.014489; direction agreement=True
+    iCOH maxT p: label=0.26173826; time=0.36063936; partner=0.13886114; within-triad dyad=0.56943057
+    iCOH label-pass=False; iCOH all-four-null-pass=False
+  unit 8156: feedback beta pair13 T3-C4
+    PLV Δ=0.088978; iCOH Δ=0.012420; direction agreement=True
+    iCOH maxT p: label=0.77622378; time=0.74925075; partner=0.80219780; within-triad dyad=0.97602398
+    iCOH label-pass=False; iCOH all-four-null-pass=False
+
+COUNTS
+  Direction agrees with PLV: 3/3
+  iCOH label-maxT passes: 0/3
+  iCOH all-four-null passes: 0/3
+
+CHECKS
+  fixed_candidate_count_3: PASS
+  all_effects_finite: PASS
+  all_pvalues_valid: PASS
+
+RESULT
+  PASS
+
+INTERPRETATION RULE
+  PLV remains the primary metric and defines the fixed candidate family.
+  iCOH is a pre-specified non-zero-lag robustness metric only.
+  Lack of iCOH significance does not retroactively invalidate the PLV
+  candidates, but it limits claims that the effect is robust to zero-lag
+  or common-source contributions.
+
+FILE PROVENANCE
+  CSV: results/robustness/stage5B_imcoh_final3_robustness.csv
+  CSV SHA256: 013a8928372618398a73116cbf81c8b955fda486609380a955b1e40cc54b9c3b
+
+Summary: results/robustness/stage5B_imcoh_final3_robustness_summary.txt

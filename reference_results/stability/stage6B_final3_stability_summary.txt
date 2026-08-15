@@ -1,0 +1,60 @@
+Brain Topography Project — Stage 6B Final-3 Triad Stability
+============================================================================
+Run time: 2026-08-15T09:43:03-04:00
+Fixed PLV candidates: 3
+Informative triads: 11
+Triad-bootstrap draws: 10000
+Maximum primary reconstruction error: 1.664329299e-09
+
+CANDIDATES
+  unit 3801: decision beta pair13 Fp2-C3
+    full ΔPLV=0.066665; individual triads same direction=11/11
+    LOTO same direction=11/11; range=[0.056649, 0.071028]
+    largest LOTO change when omitting G09: |Δ change|=0.010016
+    bootstrap median=0.066048; 95% percentile interval=[0.045936, 0.097500]; same-direction fraction=1.0000
+    equal-triad secondary effect=0.079636; direction agrees=True
+  unit 4994: decision gamma pair13 F7-F8
+    full ΔPLV=0.078445; individual triads same direction=11/11
+    LOTO same direction=11/11; range=[0.066569, 0.089440]
+    largest LOTO change when omitting G04: |Δ change|=0.011876
+    bootstrap median=0.078527; 95% percentile interval=[0.047832, 0.119343]; same-direction fraction=1.0000
+    equal-triad secondary effect=0.085238; direction agrees=True
+  unit 8156: feedback beta pair13 T3-C4
+    full ΔPLV=0.088978; individual triads same direction=9/11
+    LOTO same direction=11/11; range=[0.080130, 0.100636]
+    largest LOTO change when omitting G03: |Δ change|=0.011658
+    bootstrap median=0.089436; 95% percentile interval=[0.052807, 0.123148]; same-direction fraction=1.0000
+    equal-triad secondary effect=0.084116; direction agrees=True
+
+TECHNICAL CHECKS
+  fixed_candidate_count_3: PASS
+  candidate_unit_ids_expected: PASS
+  primary_reconstruction_error_lt_2e-6: PASS
+  all_loto_finite: PASS
+  all_bootstrap_finite: PASS
+  all_candidate_rows_written: PASS
+  bootstrap_draw_count_10000: PASS
+
+RESULT
+  PASS
+
+INTERPRETATION RULE
+  These results quantify dependence on the 11 triads after the final PLV
+  family was already frozen. They must not be used to discover a new edge
+  or silently drop a candidate. LOTO sign retention and bootstrap intervals
+  are sensitivity descriptors. A bootstrap percentile interval excluding
+  zero is not a replacement for the Stage-3/4 null-calibrated inference.
+
+  The equal-triad estimate is a secondary weighting-sensitivity diagnostic
+  only. The primary stability calculations preserve the same block-information
+  weighting used by the primary PLV effect.
+
+PROVENANCE
+  Stage 4D2 CSV: results/nulls/stage4D2_empirical_within_triad_dyad_null.csv
+  Stage 4D2 SHA256: cde80283b2229bf2e8f95f3585d501bc8376379d37407f42c2996d642292c599
+  Candidate CSV: results/stability/stage6B_final3_stability.csv
+  Candidate CSV SHA256: 13dce9876c650bdfebd1739b2311faa68363dff7596bf29e70b52b80d0f2f8a0
+  Triad CSV: results/stability/stage6B_final3_triad_effects.csv
+  LOTO CSV: results/stability/stage6B_final3_loto.csv
+  NPZ: results/stability/stage6B_final3_stability.npz
+  Summary: results/stability/stage6B_final3_stability_summary.txt

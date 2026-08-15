@@ -1,0 +1,28 @@
+Brain Topography Project — Stage 4C2 Within-Triad Dyad Null Stress Test
+==================================================================================
+Elapsed minutes: 2.38
+
+CELL RESULTS
+  global_shared_event shared=0.35: current FWER=0.080, +dyad-null FWER=0.010
+  global_shared_event shared=0.60: current FWER=0.050, +dyad-null FWER=0.000
+  group_shared_event shared=0.35: current FWER=0.520, +dyad-null FWER=0.070
+  group_shared_event shared=0.60: current FWER=1.000, +dyad-null FWER=0.010
+  group_shared_event shared=0.85: current FWER=1.000, +dyad-null FWER=0.000
+  sparse_true coupling=0.60 shared=0.00 noise=0.06: current sens/prec=0.342/0.313; +dyad-null sens/prec=0.342/0.330
+  sparse_true coupling=0.60 shared=0.00 noise=0.10: current sens/prec=0.160/0.286; +dyad-null sens/prec=0.160/0.292
+  sparse_true coupling=0.85 shared=0.00 noise=0.06: current sens/prec=0.436/0.270; +dyad-null sens/prec=0.436/0.276
+  sparse_true coupling=0.85 shared=0.00 noise=0.10: current sens/prec=0.231/0.294; +dyad-null sens/prec=0.231/0.302
+  sparse_true_plus_group_shared coupling=0.60 shared=0.60 noise=0.06: current sens/prec=0.316/0.037; +dyad-null sens/prec=0.222/0.159
+  sparse_true_plus_group_shared coupling=0.60 shared=0.60 noise=0.10: current sens/prec=0.178/0.064; +dyad-null sens/prec=0.147/0.277
+  sparse_true_plus_group_shared coupling=0.85 shared=0.60 noise=0.06: current sens/prec=0.373/0.038; +dyad-null sens/prec=0.342/0.124
+  sparse_true_plus_group_shared coupling=0.85 shared=0.60 noise=0.10: current sens/prec=0.151/0.050; +dyad-null sens/prec=0.151/0.162
+
+DECISION RULE
+  Integrate the new null into the empirical framework only if repeated
+  simulations show a substantial reduction of group_shared_event false
+  positives without collapsing sparse_true recovery to near zero.
+  Do not tune thresholds or generator parameters after seeing this test.
+
+Raw CSV: results/simulation/stage4C2_dyad_null_stress_runs.csv
+Summary CSV: results/simulation/stage4C2_dyad_null_stress_summary.csv
+Summary: results/simulation/stage4C2_dyad_null_stress_summary.txt

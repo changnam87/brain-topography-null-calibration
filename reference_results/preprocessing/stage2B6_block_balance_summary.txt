@@ -1,0 +1,80 @@
+Brain Topography Project — Stage 2B6 Block-Level Balance Audit
+========================================================================
+Run time: 2026-08-14T22:35:02-04:00
+
+BLOCK STRUCTURE
+  11 triads x 4 blocks x 10 trials = 44 block strata.
+  Informative blocks (both CCC and Other): 23/44
+  Non-informative blocks (single class): 21/44
+
+COUNTS BY TRIAD
+  G01: blocks CCC/Other = 10/0 | 0/10 | 2/8 | 0/10; informative blocks=1/4; triad weight=8.400; block-stratified weight sum=1.600; ratio=19.0%
+  G02: blocks CCC/Other = 10/0 | 10/0 | 8/2 | 9/1; informative blocks=2/4; triad weight=2.775; block-stratified weight sum=2.500; ratio=90.1%
+  G03: blocks CCC/Other = 7/3 | 4/6 | 8/2 | 0/10; informative blocks=3/4; triad weight=9.975; block-stratified weight sum=6.100; ratio=61.2%
+  G04: blocks CCC/Other = 1/9 | 3/7 | 9/1 | 10/0; informative blocks=3/4; triad weight=9.775; block-stratified weight sum=3.900; ratio=39.9%
+  G05: blocks CCC/Other = 6/4 | 0/10 | 0/10 | 0/10; informative blocks=1/4; triad weight=5.100; block-stratified weight sum=2.400; ratio=47.1%
+  G06: blocks CCC/Other = 10/0 | 10/0 | 10/0 | 6/4; informative blocks=1/4; triad weight=3.600; block-stratified weight sum=2.400; ratio=66.7%
+  G07: blocks CCC/Other = 10/0 | 10/0 | 10/0 | 9/1; informative blocks=1/4; triad weight=0.975; block-stratified weight sum=0.900; ratio=92.3%
+  G08: blocks CCC/Other = 1/9 | 2/8 | 1/9 | 6/4; informative blocks=4/4; triad weight=7.500; block-stratified weight sum=5.800; ratio=77.3%
+  G09: blocks CCC/Other = 10/0 | 2/8 | 0/10 | 0/10; informative blocks=1/4; triad weight=8.400; block-stratified weight sum=1.600; ratio=19.0%
+  G10: blocks CCC/Other = 8/2 | 10/0 | 10/0 | 7/3; informative blocks=2/4; triad weight=4.375; block-stratified weight sum=3.700; ratio=84.6%
+  G11: blocks CCC/Other = 4/6 | 2/8 | 9/1 | 7/3; informative blocks=4/4; triad weight=9.900; block-stratified weight sum=7.000; ratio=70.7%
+
+NON-INFORMATIVE BLOCKS
+  G01 block 1 (trials 1-10): CCC=10, Other=0
+  G01 block 2 (trials 11-20): CCC=0, Other=10
+  G01 block 4 (trials 31-40): CCC=0, Other=10
+  G02 block 1 (trials 1-10): CCC=10, Other=0
+  G02 block 2 (trials 11-20): CCC=10, Other=0
+  G03 block 4 (trials 31-40): CCC=0, Other=10
+  G04 block 4 (trials 31-40): CCC=10, Other=0
+  G05 block 2 (trials 11-20): CCC=0, Other=10
+  G05 block 3 (trials 21-30): CCC=0, Other=10
+  G05 block 4 (trials 31-40): CCC=0, Other=10
+  G06 block 1 (trials 1-10): CCC=10, Other=0
+  G06 block 2 (trials 11-20): CCC=10, Other=0
+  G06 block 3 (trials 21-30): CCC=10, Other=0
+  G07 block 1 (trials 1-10): CCC=10, Other=0
+  G07 block 2 (trials 11-20): CCC=10, Other=0
+  G07 block 3 (trials 21-30): CCC=10, Other=0
+  G09 block 1 (trials 1-10): CCC=10, Other=0
+  G09 block 3 (trials 21-30): CCC=0, Other=10
+  G09 block 4 (trials 31-40): CCC=0, Other=10
+  G10 block 2 (trials 11-20): CCC=10, Other=0
+  G10 block 3 (trials 21-30): CCC=10, Other=0
+
+INFORMATIVE-BLOCK MINORITY COUNTS
+  minority=1: 7 block(s)
+  minority=2: 7 block(s)
+  minority=3: 4 block(s)
+  minority=4: 5 block(s)
+
+WITHIN-BLOCK PERMUTATION SUPPORT
+  Unique allocations per informative block: median=45.0, range=[10, 210]
+  Informative blocks with <=10 unique allocations: 7
+    G02 block 4: 9/1, allocations=10
+    G04 block 1: 1/9, allocations=10
+    G04 block 3: 9/1, allocations=10
+    G07 block 4: 9/1, allocations=10
+    G08 block 1: 1/9, allocations=10
+    G08 block 3: 1/9, allocations=10
+    G11 block 3: 9/1, allocations=10
+
+TOTAL CONTRAST INFORMATION
+  Triad-stratified total information weight: 70.775
+  Block-stratified total information weight: 37.900
+  Block/triad information ratio: 53.5%
+
+RESULT
+  DIAGNOSTIC COMPLETE
+
+DECISION GUIDE
+  If block stratification retains substantial contrast information,
+  a triad x block fixed-effect / restricted-permutation statistic is
+  preferable because it controls session/block-level drift and learning.
+  If it destroys most contrast information, retain triad-stratified
+  inference as primary and use block-aware inference as sensitivity.
+  Freeze the choice before computing connectivity.
+
+CSV: results/preprocessing/stage2B6_block_balance.csv
+Summary: results/preprocessing/stage2B6_block_balance_summary.txt

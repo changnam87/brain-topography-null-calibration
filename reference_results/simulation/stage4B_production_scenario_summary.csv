@@ -1,0 +1,6 @@
+scenario,n_cells,total_repetitions,naive_FWER,label_FWER,full_FWER,mean_naive_sensitivity,mean_label_sensitivity,mean_full_sensitivity,mean_naive_precision,mean_label_precision,mean_full_precision,naive_exact_recovery_rate,label_exact_recovery_rate,full_exact_recovery_rate,mean_raw_auprc,mean_label_score_auprc,mean_raw_topk_recall
+independent_null,3,300,1.0,0.05333333333333334,0.02666666666666667,nan,nan,nan,0.0,0.0,0.0,0.0,0.0,0.0,nan,nan,nan
+global_shared_event,3,300,1.0,1.0,0.08666666666666667,nan,nan,nan,0.0,0.0,0.0,0.0,0.0,0.0,nan,nan,nan
+group_shared_event,3,300,1.0,1.0,0.8766666666666666,nan,nan,nan,0.0,0.0,0.0,0.0,0.0,0.0,nan,nan,nan
+sparse_true,9,450,nan,nan,nan,0.8340740740740741,0.6911111111111112,0.16074074074074074,0.13721490031655179,0.2698190574857241,0.2926255406205119,0.0,0.0,0.0,0.373590616122238,0.26178661192354,0.25629629629629624
+sparse_true_plus_group_shared,9,450,nan,nan,nan,1.0,1.0,0.15259259259259259,0.027777777777777776,0.027777777777777776,0.036278294802474124,0.0,0.0,0.0,0.3269463184951025,0.027777777777777776,0.21555555555555556

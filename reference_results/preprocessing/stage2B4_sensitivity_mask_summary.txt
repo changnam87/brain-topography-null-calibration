@@ -1,0 +1,42 @@
+Brain Topography Project — Stage 2B4 Frozen Artifact-Sensitivity Mask
+===========================================================================
+Run time: 2026-08-14T22:30:22-04:00
+
+PRIMARY ANALYSIS
+  Retain all 440 triadic trials. No EEG-QC exclusions.
+
+SENSITIVITY MASK RULE
+  Stage 2B2 subject/task review flag AND Stage 2B3 trial review flag.
+  The mask is EEG-only and label-blind.
+  Within each triad/task, use the UNION across participants.
+  The same retained trial set is used for pair12, pair13, and pair23.
+
+COUNTS BY GROUP/TASK
+  G02 decision: excluded=9, retained=31; CCC 37->31 (excluded 6), Other 3->0 (excluded 3); both classes retained=False
+  G02 feedback: excluded=12, retained=28; CCC 37->27 (excluded 10), Other 3->1 (excluded 2); both classes retained=True
+  G07 decision: excluded=10, retained=30; CCC 39->29 (excluded 10), Other 1->1 (excluded 0); both classes retained=True
+  G07 feedback: excluded=11, retained=29; CCC 39->29 (excluded 10), Other 1->0 (excluded 1); both classes retained=False
+  G11 decision: excluded=5, retained=35; CCC 22->19 (excluded 3), Other 18->16 (excluded 2); both classes retained=True
+  G11 feedback: excluded=2, retained=38; CCC 22->20 (excluded 2), Other 18->18 (excluded 0); both classes retained=True
+
+AGGREGATE COUNTS
+  decision: excluded trial-instances=24; CCC excluded=19, Other excluded=5; retained CCC=232, retained Other=184
+  feedback: excluded trial-instances=25; CCC excluded=22, Other excluded=3; retained CCC=229, retained Other=186
+
+CLASS RETENTION
+  Group/task cells without both CCC and Other after masking: 2
+    G02 decision: CCC=31, Other=0
+    G07 feedback: CCC=29, Other=0
+
+RESULT
+  CHECK REQUIRED
+
+INTERPRETATION
+  Because residual high-energy trials were disproportionately CCC in
+  Stage 2B3, the sensitivity analysis must be reported as a robustness
+  check rather than replacing the full-sample primary analysis.
+
+Mask CSV: results/preprocessing/stage2B4_sensitivity_trial_mask.csv
+Counts CSV: results/preprocessing/stage2B4_sensitivity_counts_by_group.csv
+Mask NPZ: results/preprocessing/stage2B4_sensitivity_mask.npz
+Summary: results/preprocessing/stage2B4_sensitivity_mask_summary.txt
