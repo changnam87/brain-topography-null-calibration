@@ -6,6 +6,8 @@ authors:
   - family-names: "Nam"
     given-names: "Chang S."
     alias: "CS Nam"
+  - family-names: "Kim"
+    given-names: "Heegyu"
 repository-code: "https://github.com/changnam87/brain-topography-null-calibration"
 url: "https://github.com/changnam87/brain-topography-null-calibration"
 license: MIT
@@ -25,4 +27,6 @@ preferred-citation:
   authors:
     - family-names: "Nam"
       given-names: "Chang S."
-  notes: "Manuscript submitted to Brain Topography; complete author list and publication metadata should be updated after acceptance."
+    - family-names: "Kim"
+      given-names: "Heegyu"
+  notes: "Manuscript submitted to Brain Topography; publication metadata should be updated after acceptance."
